@@ -26,7 +26,7 @@ const baseConfig = new ScratchWebpackConfigBuilder(
         rootPath: path.resolve(__dirname),
         enableReact: true,
         shouldSplitChunks: false,
-        publicPath: 'auto'
+        publicPath: process.env.NODE_ENV === 'production' ? '/scratch/' : 'auto'
     })
     .setTarget('browserslist')
     .merge({

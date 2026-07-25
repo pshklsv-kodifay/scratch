@@ -68,6 +68,7 @@ export default appTarget => {
                 canEditTitle
                 isScratchDesktop
                 showTelemetryModal
+                assetHost={'https://cdn.assets.scratch.mit.edu'}
                 canSave={false}
                 onTelemetryModalCancel={handleTelemetryModalCancel}
                 onTelemetryModalOptIn={handleTelemetryModalOptIn}
@@ -77,6 +78,7 @@ export default appTarget => {
                 canEditTitle
                 backpackVisible
                 showComingSoon
+                assetHost={'https://cdn.assets.scratch.mit.edu'}
                 backpackHost={backpackHost}
                 canSave={false}
                 onClickLogo={onClickLogo}
